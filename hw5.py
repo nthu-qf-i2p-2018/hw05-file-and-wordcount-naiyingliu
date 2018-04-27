@@ -1,7 +1,7 @@
-#0424
+
 # coding: utf-8
 
-# In[120]:
+# In[4]:
 
 
 # -*- coding: utf-8 -*-
@@ -28,7 +28,7 @@ def main(filename):
         for word in words:
             # then, remove (strip) unwanted punctuations from every word
             # "dream." => "dream"
-            word = word.strip('!:;"?!,.-')
+            word = word.strip(string.punctuation)
             # check if word is not empty
             if word:
                 # append the word to "all_words" list
